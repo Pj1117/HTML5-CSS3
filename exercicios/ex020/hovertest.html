@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de hover</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+        body{
+            font-family: "Lugrasimo", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        div{
+            color: lightslategray;
+        }
+        
+        div > p{
+            display: none;
+        }
+
+        div:hover{
+            color: cornflowerblue;
+        }
+
+        div:hover > #paragrafo1{
+            display: block;
+
+        }
+        div:hover> #paragrafo2{
+            display: block;
+            background-color: rgb(179, 189, 189);
+            border: 1px solid black;
+            width: 205px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Teste Hover</h1>
+    <div>
+        Passe o mouse
+        <p id="paragrafo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatem odio deserunt officia fugit hic totam illo perferendis, distinctio dolores dolore porro ea possimus molestias? Alias molestiae architecto dignissimos iusto.</p>
+        <p id="paragrafo2">AJKSKJSHAAHKAJA</p>
+</body>
+</html>

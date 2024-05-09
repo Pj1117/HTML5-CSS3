@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            font-size: 16px;
+            font-weight: lighter;
+            /*lighter normal bold bolder*/
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h1{
+            font: italic 100 2em 'Times New Roman'
+            /* shorthand font
+            
+            - font-style -> font-weight-> font-size -> font-family*/
+        }
+
+        h2 {
+            font: italic 900 2em 'Times New Roman'
+        }
+    </style>
+</head>
+<body>
+    <p><strong><u>font-size (A recomendção da W3C é utilizar as medidas "px" e "em").</u></strong> <br>
+        <br>
+        Medidas absolutas: <u><strong>cm</strong> (centímetro), <strong>mm</strong> (milímetro), <strong>in</strong> (polegada), <strong>px (píxel)</strong>, <strong>pt (ponto)</strong> e <strong>pc</strong> (paica) <br></u>
+        <br>
+
+        Medidas relativas:
+        <u><strong>em</strong> (medida relativa ao tamanho de um m maiúsculo de uma letra e uuma determinada fonte), <strong>ex</strong> (é relativo a altura x de uma fonte), <strong>rem</strong> (é tipo o em mas é relativo ao root-fonte configurada no body-), <strong>vw</strong> (é relativo a largura da tela - viewport -), <strong>vh</strong> (é a altura da viewport), <strong>%</strong></u>
+        <p>16px geralmente = 1em (16px é o tamanho padrão da letra) <br>
+            O em é sempre relativo ao tamanho atual da fonte
+        </p>
+    </p>
+    <hr>
+    <p>**Se não achar a Arial ele vai tentar a Helvetica, se não achar a Helvetica ele tenta achar a sans-serif.(isso se chama <strong>safe combination</strong>).</p>
+
+    <p>**Se colocar uma declaração de sans-serif, todo os dispositivo vai reconhecer pois todos tem fontes sem serifa, o navegador vai escolher qual fonte sem serifa vai ser, o mesmo vale para a declaração de <strong>serif</strong>, <strong>monopace</strong> etc.</p>
+
+    <p>**Existe o problema de nem sempre alguns dispositivos terem essas fontes
+    </p>
+    <hr>
+
+    <h1>Trabalhando com fontes</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eveniet vitae repellat excepturi omnis atque officia debitis ducimus accusantium, amet ipsa veritatis mollitia inventore aut at accusamus magni voluptate quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolor porro iste doloribus, suscipit quaerat quis dolorum blanditiis magnam beatae mollitia neque! Et velit incidunt, ex fuga tempore doloremque dolorum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus, debitis placeat officia expedita beatae dicta obcaecati totam maxime fuga ab voluptas repellat harum assumenda quos aperiam itaque sequi dignissimos?</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam illum accusamus sed. Ea eum, veritatis ducimus deserunt nisi quibusdam deleniti est esse voluptas porro dolore architecto dolor maiores nobis doloremque.</p>
+</body>
+</html>

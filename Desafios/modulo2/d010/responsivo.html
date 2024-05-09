@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 240px; /*largura mínima*/
+            max-width: 800px; /*largura maxima*/
+        }
+        img{
+            width: 100%; /*100% relativo ao tamanho da  tag main neste caso(há outra forma de fazer a responsividade da imagem tbm)*/
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <p>**Usando a Tag &lt;picture&gt;, é possível usar o &lt;source-media&gt; e configurar quando a imagem irá quebrar definindo um minimo ou maximo.
+        <hr>
+        <h1>Testando Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quas eius eos similique error est doloribus rem placeat perferendis quo! Magnam reprehenderit quas odio, rerum doloribus impedit quam autem fuga?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus impedit voluptate ex expedita esse nobis fugiat at consequuntur dolorem, ad vero autem corporis quaerat consectetur aut provident quas exercitationem omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, accusamus repellendus et, doloribus iusto repudiandae adipisci possimus unde odio obcaecati corporis provident aspernatur quis, atque laborum iste voluptate error optio.
+        </p>
+        <picture> 
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates enim quos, tempore dolor quis exercitationem sunt praesentium minima qui repellendus ratione eum fuga harum sapiente, fugit commodi ex illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem suscipit, quibusdam cumque impedit blanditiis nostrum quis et sapiente illum eaque explicabo numquam atque maxime ducimus officiis? Officiis, reprehenderit neque! Eius.
+        </p>
+    </main>
+</body>
+</html>

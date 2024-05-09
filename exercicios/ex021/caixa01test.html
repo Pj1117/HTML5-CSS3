@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste caixa01</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1#block{
+            color: black;
+            background-color: rgb(167, 94, 5);
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkgoldenrod;
+            padding: 10px 13px 10px 20px;
+            margin: 20px auto 15px auto;
+            outline: 10px dashed brown;
+        }
+
+        a#inline{
+            color: darkred;
+            border: 10px dashed darkkhaki;
+        }
+        h1#block-inline{
+            color: black;
+            background-color: lightslategray;
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            border: 10px solid blue;
+            padding: 10px 13px 10px 20px;
+            margin: 20px auto 15px auto;
+            outline: 10px dashed black;
+        }
+
+        a#inline-block{
+            display: inline-block;
+            color: black;
+            background-color: rgb(167, 94, 5);
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkgoldenrod;
+            padding: 10px 13px 10px 20px;
+            margin: 20px auto 15px auto;
+            outline: 10px dashed brown;
+        }
+</style>
+</head>
+<body>
+    <h1 id="block">Exemplo de caixa/block</h1>
+    <p>Exemplo de um item somente <a id="inline" href="#">inline level</a></p>
+    <h1 id="block-inline">Exemplo de block com inline</h1>
+    <p>Exemplo de item  com <a id="inline-block" href="">inline-block</a></p>
+</body>
+</html>

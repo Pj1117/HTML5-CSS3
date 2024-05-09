@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            ::  = pseudo-element
+            >  = children
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            font-size: larger;
+            font-weight: 600;
+            color: lightslategray;
+            text-decoration: none; /*Tira o sublinhado*/
+            font-weight: bold; /*Ficar em negrito*/
+        }
+
+        a:visited{ /*Se  o link foi visitado*/
+            color: green;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        
+        a:active{ /*Quando o link é clicado*/
+            color: greenyellow;
+        }
+        .especial::before{
+            content: '✔ ';
+        }
+
+        a::before{
+            content: '☑  ';
+
+        }
+
+        .especial::after{ /*- Pseudo CLASSE 1 vez :
+                    - Pseudo ELEMENTO 2 vezes ::*/
+            content: '  ✔';
+            text-decoration: none;
+            font-weight: 600;
+            color: green;
+        }
+
+        a::after{
+            content: '  ☑';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.google.com/" target="_blank" rel="external">Google</a></li></a>
+        <li><a href="https://www.bing.com/" class="especial" target="_blank" rel="external">bing</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external">youtube</a></li>
+    </ul>
+</body>
+</html>

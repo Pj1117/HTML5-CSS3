@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam Sozinhas/Vídeos/Áudios</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<p>** A tag <b>&lt;picture&gt;</b> permite que você crie vários sources/Fontes
+</p>
+<p>**A ordem dos <b>&lt;source&gt</b>; é sempre que uma adição de imagem for feita, o<b> &lt;source&gt;</b> dessa imagem deve ser colocado acima do <b>&lt;source&gt;</b> 'Base'.
+</p>
+<p>**É adicionado mais 50x pixel na imagem pois quando a janela chegar aos 1000 pixels, <br>
+    a imagem não vai mais caber lá
+</p>
+<hr>
+<h1>Imagem Dinâmica</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem Flexível">
+</picture>
+<hr>
+<h1>Reproduzindo Aúdio</h1>
+    **Utiliza-se os parâmetros <strong>controls</strong> (controles de reprodução, pausa, volume etc) e <strong>autoplay</strong> (tocar automaticamente quando abrir a página) para se reproduzir o audio
+    <p>Vamos aprender a reproduzir aúdios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/eai pai.mp3" type="audio/mpeg">
+        <source src="midia/eai pai.ogg" type="audio/ogg">
+        <source src="midia/eai pai.wave" type="audio/wave">
+        <p>**O navegador sempre irá tentar carregar os aúdios na ordem e se nenhum deles for carregado essa mensagem irá aparecer.</p>
+    </audio>
+    <hr>
+    <h2>Outra forma de adicionar audio</h2>
+    <p>**Source src é usada para audios</p>
+    <p>**O parâmetro <strong>preload</strong> em <strong>auto</strong> considera qua o site terminou de carregar se o audio carregar todo também.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/eai pai.mp3" type="audio/mpeg">
+    </audio>
+    <!--MP3 WAG OGG (Formatos para ter compatibilidade com todos os navegadores)-->
+</body>
+</html>

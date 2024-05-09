@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px; /*Altura*/
+            width: 200px; /*Largura*/
+        }
+        div#d1{
+            background-color: aquamarine;
+        }
+        div#d2{
+            background-color: bisque;
+        }
+        div#d3{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 400;
+            text-align: right;
+            font-size: normal;
+        }
+        div:hover{
+            /* -As pseudo-classe tem que estar relacionadas a um elemento ou a uma classe e estão relacionadas ao estado de um determinado elemento se ele está ativo, marcado etc.
+                -hover é uma pseudo-classe de vários elementos(Significa que quando eu passar o mouse por cima dele ex: Só vai ficar com o fundo amarelo, quando eu passar o mouse em cima)*/
+                background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

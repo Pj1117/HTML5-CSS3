@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste dos links</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        body{
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+        li{
+            font-size: larger;
+            font-weight: 600;
+        }
+
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: 900;
+            
+            
+        }
+        
+        a:active{
+            color: burlywood;
+        }
+
+        a::before{
+            content: '  ✯ ';
+            color: rgb(1, 143, 143);
+        }
+
+        a::after{
+            content: '  ✯';
+            color: rgb(1, 143, 143);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>Teste dos links</h1>
+        <li><a href="https://google.com" target="_blank" rel="external">Amazon</a></li>
+        <li><a href="https://google.com" target="_blank" rel="external">Apple</a></li>
+        <li><a href="https://google.com" target="_blank" rel="external">Microsoft</a></li>
+        <li><a href="https://google.com" target="_blank" rel="external">Samsung</a></li>
+    </ul>
+</body>
+</html>

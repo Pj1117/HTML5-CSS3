@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkred;
+                    /*width style color*/
+
+            padding: 10px;
+                    /*top right botton left (se as quatro forem iguais, basta colocar 1 vez só)*/
+
+            margin: auto; /*Vai fazer com que a margin centralize horizontalmente (se for uma caixa)*/
+            margin:20px auto 40px auto;
+                    /*vai calcular automaticamente o tamanho da borda da direita e da esquerda para que o bloco fique centralizado*/
+
+            outline:5px dashed chocolate; /*outine fica entre o berder e a margin*/
+            
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos tambem sao exemmplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>, Vamos ver como tudo isso funciona</p>
+</body>
+</html>
