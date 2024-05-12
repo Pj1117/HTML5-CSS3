@@ -1,7 +1,20 @@
         @charset "UTF-8";
+        
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
-        
+
+        :root{
+            --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+            --fonte2: "Passion One", sans-serif;
+            --fonte3: "Sriracha", cursive ;
+        }
+
+        section p{
+            margin: 0px;
+            padding: 5px;
+
+        }
+
         body{
             background-color: white;
             margin: 0px;
@@ -9,25 +22,38 @@
         }
 
         header{
-            padding: 40px;
+            padding: 1vmax;
             text-align: center;
             color: white;
             background-color: black;
-            font-family: "Passion One", sans-serif;
+            font-family: var(--fonte2);
             font-weight: 700;
             font-style: normal;
-            font-size: 130px;
+            font-size: 5vmax;
+        }
+
+        header >h1{
+            padding: 1vmax;
+            text-align: center;
+            color: white;
+            background-color: black;
+            font-family: var(--fonte2);
+            font-weight: 700;
+            font-style: normal;
+            font-size: 10vmax;
+            margin: 0px;
         }
 
         header >p{
-            font-family: Verdana;
-            font-size: 16px;
+            font-family: var(--fonte1);
+            font-size: 2vmax;
+            margin: 0px;
         }
 
         p >a{
             text-decoration: none;
-            font-family: Verdana;
-            font-size: 16px;
+            font-family: var(--fonte1);
+            font-size: 2vmax;
             font-weight: bold;
             color: white;
         }
@@ -37,53 +63,52 @@
         }
 
         section{
-            font-family: "Sriracha", cursive;
+            font-family: var(--fonte3);
             font-weight: 400;
             font-style: normal;
-            font-size: 50px;
-            padding: 100px 20px;
-            line-height: 100px;
+            font-size: 3vmax;
+            line-height: 6vmax;
+            margin: 0px;
+            padding: 1vmax;
         }
-
 
         #imagem1{
             position: relative;
             background: url(pacote-d012/imagens/background001.jpg) no-repeat center center/cover fixed;
-            width: 15000px;
-            height: 850px;
+            width: 110vw;
+            height: 90vh;
             color: white;
-            margin: -30px -30px -30px -108px;
             padding: 0px ;
             box-shadow: inset -1px 1px 12px 1px black;
         }
 
         .estrofe{
-            font-family: "Sriracha", cursive;
+            font-family: var(--fonte3);
             font-weight: 400;
             font-style: normal;
-            font-size: 50px;
-            line-height: 100px;
-            padding: 5px;
-            background-color: rgba(0, 0, 0, 0.705);
-            border: 1px solid black;
+            font-size: 3vmax;
+            line-height: 6vmax;
+            padding: 1vmax;
+            margin-left: 25px;
+            background-color: rgba(0, 0, 0, 0.459);
+            text-shadow: 1px 1px 1px black;
             position: absolute;
-            left: 0.83%;
-            top: 2%;   
+            width: 34%;
+            height: 84%;
         }
 
         #imagem2{
             position: relative;
             background: url(pacote-d012/imagens/background002.jpg) no-repeat center center/cover fixed;
-            width: 15000px;
-            height: 850px;
+            width: 110vw;
+            height: 90vh;
             color: white;
-            margin: -30px -30px -30px -108px;
             padding: 0px;
             box-shadow: inset -1px 1px 12px 1px black;
         }
 
         footer p{
-            font-size: 30px;
+            font-size: 2.4vmax;
             font-weight: bold;
             color: white;
             background-color: black;
@@ -93,10 +118,11 @@
         }
 
         footer a{
-            font-size: 20px;
+            font-size: 2vmax;
             font-weight: bold;
         }
 
         footer a:hover{
             text-decoration: underline;
         }
+       
