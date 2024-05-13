@@ -7,7 +7,7 @@
             margin: 0px;
             padding: 0px;
         }
-        
+
         :root{
             --fonte1: Verdana, Geneva, Tahoma, sans-serif;
             --fonte2: "Passion One", sans-serif;
@@ -75,7 +75,7 @@
         }
 
         #imagem1{
-            background: url(pacote-d012/imagens/background001.jpg) no-repeat right center/cover fixed;
+            background: url(pacote-d012/imagens/background001.jpg) no-repeat right right/cover fixed;
             padding: 25px;
             
         }
