@@ -3,6 +3,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
         :root{
             --fonte1: Verdana, Geneva, Tahoma, sans-serif;
             --fonte2: "Passion One", sans-serif;
@@ -10,9 +15,7 @@
         }
 
         section p{
-            margin: 0px;
-            padding: 5px;
-
+            padding-bottom: 2em;
         }
 
         body{
@@ -63,23 +66,23 @@
         }
 
         section{
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 2em;
+            padding: 25px;
             font-family: var(--fonte3);
-            font-weight: 400;
-            font-style: normal;
-            font-size: 3vmax;
-            line-height: 6vmax;
-            margin: 0px;
-            padding: 1vmax;
+            font-size: 3.5vw;
         }
 
         #imagem1{
-            position: relative;
-            background: url(pacote-d012/imagens/background001.jpg) no-repeat center center/cover fixed;
-            width: 110vw;
-            height: 90vh;
-            color: white;
-            padding: 0px ;
-            box-shadow: inset -1px 1px 12px 1px black;
+            background: url(pacote-d012/imagens/background001.jpg) no-repeat right center/cover fixed;
+            padding: 25px;
+            
+        }
+
+        #imagem2{
+            background: url(pacote-d012/imagens/background002.jpg) no-repeat center center/cover fixed;
+            padding: 25px;
         }
 
         .estrofe{
@@ -88,24 +91,13 @@
             font-style: normal;
             font-size: 3vmax;
             line-height: 6vmax;
-            padding: 1vmax;
-            margin-left: 25px;
+            padding: 25px;
             background-color: rgba(0, 0, 0, 0.459);
+            color: white;
             text-shadow: 1px 1px 1px black;
-            position: absolute;
-            width: 34%;
-            height: 84%;
+            display: inline-block;
         }
 
-        #imagem2{
-            position: relative;
-            background: url(pacote-d012/imagens/background002.jpg) no-repeat center center/cover fixed;
-            width: 110vw;
-            height: 90vh;
-            color: white;
-            padding: 0px;
-            box-shadow: inset -1px 1px 12px 1px black;
-        }
 
         footer p{
             font-size: 2.4vmax;
