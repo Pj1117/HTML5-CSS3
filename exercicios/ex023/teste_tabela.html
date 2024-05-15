@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            margin: auto;
+
+        }
+
+        tr >td{
+            border: 3px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .col_span{
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste mesclagem</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            
+        </tr>
+        <tr>
+            <td>E</td>
+            
+            <td>G</td>
+            <td class="col_span" rowspan="2">H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            
+            
+        </tr>
+        <tr>
+            <td>M</td>
+            
+            <td>O</td>
+            <td class="col_span" colspan="2">P</td>
+        </tr><tr>
+            <td>Q</td>
+            
+            
+            <td class="col_span" colspan="3">T</td>
+        </tr><tr>
+            <td>U</td>
+            <td>V</td>
+            <td class="col_span" colspan="2">W</td>
+           
+        </tr>
+
+    </table>
+</body>
+</html>
