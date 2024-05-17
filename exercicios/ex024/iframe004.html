@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+    <style>
+        .nota{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid black;
+            background-color: bisque;
+            border-radius: 5px;
+            text-align: justify;
+            font-size: large;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        div strong{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="nota">
+
+        <p>
+            <strong>**</strong>Quando se usa a configurção <strong>sandobox="sandbox"</strong>, cria-se uma proteção um pouco maior em relação a ataques pois não estará capturando nenhum tipo de informação
+        </p>
+        <p>
+            <strong>**sandbox="allow-same-origin:</strong> permite o conteúdo de mesma origem"
+        </p>
+        <p>
+            <strong>**referrerpolicy="no-referer"</strong>, deixa o que esta dentro do iframe um pouco mais limitado, o conteúdo dentro do iframe não vai coletar nenhum tipo de informação do usuário
+        </p>
+
+    </div>
+    <hr>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias voluptates fugit ut amet tempora aliquid cum eligendi repellendus dolorem voluptatem, asperiores eum, excepturi quod ex ipsa nulla aperiam, consectetur corrupti.</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referer"></iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur tempore assumenda doloremque quis enim nihil modi autem eius architecto provident dolor officiis vero dolorum pariatur, iste veniam animi earum quam.</p>
+</body>
+</html>
