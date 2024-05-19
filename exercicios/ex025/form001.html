@@ -30,13 +30,18 @@
     <p>**Dentro for no label, se coloca o name ou o id.</p>
     <p>**Fazendo os 2 passos acima, se cria um a ligação entre os campos de entrada.</p>
     <hr>
+    <p>**Com a função method="post", os dados enviados não aparecem na URL</p>
+    <p>**É melhor usar o method"get" quando os dados não forem sensíveis.</p>
+    <p>**Quando você envia dados por get você só pode enviar até 3.000 bytes (é ,aproximadamente, 3000 letras), mas ainda dá para usar o post.</p>
+    <p>**Com dados sensíveis é melhor usar o post.</p>
+    <hr>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="Nome" id="inome">
         </p>
         <p><label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome">
+            <input type="text" name="Sobrenome" id="isobrenome">
         </p>
         <p>
             <input type="submit" value="Enviar">
