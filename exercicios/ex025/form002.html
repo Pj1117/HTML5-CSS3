@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: darkslategray;
+            padding: 15px;
+            width: 300px;
+            border-radius: 5px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px black;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <p><strong>required:</strong> requerido / obrigatório. <br>
+    <strong>minlength:</strong> tamaho mínimo <br>
+        <strong>maxlength:</strong> tamanho máximo <br>
+        <strong>size:"10"</strong> vai aparecer a caixa para 10 caracteres. <br>
+        <strong>placeholder="nome do usuário"</strong> - é como se fosse uma dica.
+    </p>
+    <hr>
+
+    <h1>Teste de Formulário</h1>
+    <form autocomplete="on" action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5"
+             maxlength="15" size="15" placeholder="Nome de usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="15" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
