@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjunto de campos</title>
+   <style>
+
+     fieldset{
+            background-color: darkslategray;
+            padding: 15px;
+            width: 300px;
+            border-radius: 5px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px black;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        legend{
+            color: rgb(145, 196, 57);
+        }
+
+   </style>
+</head>
+<body>
+    <p><strong>fieldset:</strong> - Conjunto de campos</p>
+    <p><strong>pattern: </strong> - padrão</p>
+    <hr>
+    <h1>Exemplo de formulário</h1>
+    <form action="" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required placeholder="E-mail" autocomplete="email">
+            </p>
+            <p>
+                <label for="ifone">Telefone: </label>
+                <input type="tel" name="fone" id="ifone" required
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" autocomplete="tel" min="8" max="15">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
