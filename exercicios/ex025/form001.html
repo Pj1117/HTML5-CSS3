@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+            background-color: darkslategray;
+            padding: 20px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px black;
+            color: whitesmoke;
+            text-shadow: 2px 2px 2px black;
+        }
+
+    </style>
+</head>
+<body>
+    <hr>
+    <p>**action é uma função que faz com que se envie dados de um formulário.</p>
+    <hr>
+    <p>**A função do id é identificar todos os campos de entrada (input)</p>
+    <p>**Dentro for no label, se coloca o name ou o id.</p>
+    <p>**Fazendo os 2 passos acima, se cria um a ligação entre os campos de entrada.</p>
+    <hr>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="Nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
