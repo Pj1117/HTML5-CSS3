@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>
+        **Utilizando a tag <strong>&lt;optgroup&gt;</strong> é possível criar um grupo de opçoes como regiões, estados etc, utilizando o parâmetro <strong>label</strong> na linha do <strong>&lt;optgroup&gt;</strong>.
+    </p>
+    <p>
+        **Para fazer que uma opção já venha selecionada automaticamente, é só utilizar o parâmtro <strong>selected</strong> dentro da <strong>&lt;option&gt;</strong> que será selecionada (por padrão a primeira vem selecionada).
+    </p>
+    <p>
+        **Para colocar elementos que não estão listados nas opções, é necessário usar a tag <strong>&lt;datalist&gt;</strong> com um id e esse id será colocado no parâmetro <strong>list</strong> dentro do input. As <strong>&lt;option&gt;</strong>(s) dentro dessa tag e o <strong>value</strong> dentro da tag <strong>&lt;option&gt;</strong> é opcional neste caso.
+    </p>
+    <p>
+        **<strong>&lt;textarea&gt;</strong> é infinito, não existe número de linhas máximo <br>
+        <br>
+        **É recomendado usar o método <strong>post</strong> se for usar textarea para não ter problema de limitação.
+    </p>
+    <hr>
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernanbuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="ilist">
+            <datalist id="ilist">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="PROF">Proffesor</option>
+                <option value="MED">Médico</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui ->"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
