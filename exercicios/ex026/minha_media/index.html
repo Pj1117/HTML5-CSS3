@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/all.css" media="all">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <menu>
+            <h1>Site de Testes 001</h1>
+            <span id="lista" class="material-symbols-outlined" onclick="clickMenu()">list</span>
+            <menu id="menu">
+            <ul>
+                <li><a href="#">Fale conosco</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Local de atuação</a></li>
+                <li><a href="#">Horários</a></li>
+            </ul>
+            </menu>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vel inventore quod optio! Dolores nam saepe ut possimus corrupti repellendus ea fugit alias similique, nulla animi voluptatum quaerat, dolorum laudantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur maiores commodi dolore optio obcaecati, repellat quae magni reiciendis saepe! Iusto voluptatem qui autem quaerat expedita deserunt impedit nesciunt alias!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem consequuntur ad commodi tenetur ut dolore sunt voluptatum, voluptas molestiae, sapiente praesentium nihil ab placeat debitis aliquid itaque eum blanditiis voluptatibus!
+            </p>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vel inventore quod optio! Dolores nam saepe ut possimus corrupti repellendus ea fugit alias similique, nulla animi voluptatum quaerat, dolorum laudantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur maiores commodi dolore optio obcaecati, repellat quae magni reiciendis saepe! Iusto voluptatem qui autem quaerat expedita deserunt impedit nesciunt alias!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem consequuntur ad commodi tenetur ut dolore sunt voluptatum, voluptas molestiae, sapiente praesentium nihil ab placeat debitis aliquid itaque eum blanditiis voluptatibus!
+            </p>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vel inventore quod optio! Dolores nam saepe ut possimus corrupti repellendus ea fugit alias similique, nulla animi voluptatum quaerat, dolorum laudantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur maiores commodi dolore optio obcaecati, repellat quae magni reiciendis saepe! Iusto voluptatem qui autem quaerat expedita deserunt impedit nesciunt alias!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem consequuntur ad commodi tenetur ut dolore sunt voluptatum, voluptas molestiae, sapiente praesentium nihil ab placeat debitis aliquid itaque eum blanditiis voluptatibus!
+            </p>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vel inventore quod optio! Dolores nam saepe ut possimus corrupti repellendus ea fugit alias similique, nulla animi voluptatum quaerat, dolorum laudantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur maiores commodi dolore optio obcaecati, repellat quae magni reiciendis saepe! Iusto voluptatem qui autem quaerat expedita deserunt impedit nesciunt alias!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem consequuntur ad commodi tenetur ut dolore sunt voluptatum, voluptas molestiae, sapiente praesentium nihil ab placeat debitis aliquid itaque eum blanditiis voluptatibus!
+            </p>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vel inventore quod optio! Dolores nam saepe ut possimus corrupti repellendus ea fugit alias similique, nulla animi voluptatum quaerat, dolorum laudantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur maiores commodi dolore optio obcaecati, repellat quae magni reiciendis saepe! Iusto voluptatem qui autem quaerat expedita deserunt impedit nesciunt alias!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem consequuntur ad commodi tenetur ut dolore sunt voluptatum, voluptas molestiae, sapiente praesentium nihil ab placeat debitis aliquid itaque eum blanditiis voluptatibus!
+            </p>
+        </article>
+        <script>
+        function clickMenu() {
+           if (menu.style.display == 'block'){
+            menu.style.display = 'none'
+           } 
+
+           else{
+            menu.style.display = 'block'
+           }
+        }
+        </script>
+    </main>
+</body>
+</html>
