@@ -2,8 +2,24 @@
 
 body{
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    width: 50vw;
+    color: black;
+    border: 3px solid black;
 }
 
 menu{
     display: none;
+}
+
+article{
+    border: 3px solid black;
+    margin-bottom: 20px;
+    width: 80vw;
 }
