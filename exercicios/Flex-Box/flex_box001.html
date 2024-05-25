@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/anotacoes.css">
+</head>
+<body>
+    
+    <div class="anotacao">
+        <h3>Flex box</h3>
+        <p><strong>**display: flex; </strong>Adiciona um container como flex</p>
+        <p><strong>**flex-direction: </strong>Define a direção dos itens, com o padrão sendo row (linha).</p>
+        <p><strong>**flex-diretion: row-reverse:</strong> Define os itens em linha só que da direita para a esquerda. (o mesmo se aplica para a coluna <strong>column-reverse</strong>).</p>
+        <p><strong>**flex-wrap: nowrap; </strong>Vai definir se os itens vão ter uma quebra de linha ou não, tendo o valor padrão <strong>nowrap</strong></p>
+        <p><strong>**flex-wrap: reverse:</strong> Permite a quebra de linhas, da esquerda para a direita.</p>
+        <p><strong>**flex-flow: </strong>É uma shorthand que permite escrever o <strong>**flex-direction</strong> e o <strong>flex-wrap</strong>.</p>
+        <p><strong>**justify-content: center;</strong> Serve para fazer um alinhamento <strong>Horizontal</strong>, com o valor padrão sendo <strong>flex-start (direita e esquerda)</strong></p>
+        <p><strong>**align-itens: </strong>Vai fazer um alinhamento <strong>Vertical</strong> dos itens, com o valor padrão sendo stretch que define que os itens cresçam <strong>igualmente</strong>. (cima e embaixo)</p>
+        <p><strong>**align-itens: baseline;</strong> Vai fazer o alinhamento <strong>Vertical</strong> de acordo com o conteúdo de cada item.</p>
+        <p><strong>**align-content: ;</strong> Vai fazer um alinhamento <strong>Vertical</strong>, mas só quando os itens estiverem em uma <strong>multi-line (quebra)</strong> </p>
+    </div>
+
+    <section class="container">
+        <article class="item article-01">
+            <p>Article 01</p>
+        </article>
+
+        <article class="item article-02">
+            <p>Article 02</p>
+        </article>
+
+        <article class="item article-03">
+            <p>Article 03</p>
+        </article>
+    </section>
+
+</body>
+</html>
