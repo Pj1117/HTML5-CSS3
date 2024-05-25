@@ -4,17 +4,47 @@
     background-color: #ccc;
     height: 500px;
     display: flex;
-    flex-flow: column-reverse wrap;
-    justify-content: space-around;
-    align-items: flex-end;
-    align-items: flex-start;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: unset;
+    align-items: initial;
+    align-content: flex-start;
 }
 
 .item {
+    text-align: justify;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     margin: 5px;
-    width: 80%;
+    height: 30px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+    flex: 1 1 300px;
 }
+
+.article-01 {
+    order: 1; 
+    align-self: auto; 
+    flex-shrink: 3;
+}
+
+.article-02 {
+    order: 2; 
+    align-self: auto; 
+}
+
+.article-03 {
+    order: 3;
+    align-self: auto; 
+}
+.article-04 { 
+    order: 4;
+    align-self: auto; 
+} 
+
+
 
