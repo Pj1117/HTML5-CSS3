@@ -1,3 +1,73 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*
+font-family: "Open Sans", sans-serif;
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+}
+
+header li {
+    margin: 0px 15px;
+}
+
+header li:first-child{
+    margin-left: 0px;
+}
+
+header li:last-child{
+    margin-right: 0px;
+}
+
+header li a {
+    color: #191c03;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9; /*Ausencia de transparencia*/
+}
+
+a:hover{
+    opacity: 1;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 15px;
+    }
+}
