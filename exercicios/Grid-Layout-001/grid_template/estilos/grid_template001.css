@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    /* é uma configuração feita para cada COLUNA, onde os valores colocados vão alterar as colulas n° de colunas = numeros de valores (no caso 3 colunas), alterando sua LARGURA.  */
+    grid-column-gap: 10px; /* cria espaçamento entre as colunas */
+    grid-row-gap: 10px; /* cria espaçamentos entre as linhas */
+    grid-template-rows: 200px 200px 200px;
+    /* é uma configuração feita para cada LINHA, onde os valores colocados vão alterar as linhas n° de linhas = numeros de valores (no caso 3 linhas), alterando sua LARGURA. foi especificado acima o tamanho de 3 linnhas e somente essas 3 terão esse valor.*/
+    grid-auto-rows: 200px; /* Qualquer linha que for criada automaticamente vai ter 300px de ALTURA. */
+
+    grid-gap: 25px; /* é uma SHORTHAND  que cria espeaçamentos tanto para LINHAS quanto para COLUNAS. */
+    margin-bottom: 50px;
+}
+
+.wrapper div{
+    padding: 1rem;
+    background-color: royalblue;
+    border: 3px solid black
+}
+
+.wrapper div:nth-child(even) {
+    background-color: skyblue;
+}
+

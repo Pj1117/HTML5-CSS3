@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    grid-gap: 25px;
+    align-items: stretch; /* eixo Y*/
+    justify-items: stretch; /* eixo X */
+}
+
+.wrapper div:nth-child(odd) {
+   align-self: center;
+   justify-self: center;
+}
+
+.wrapper div{
+    padding: 20px;
+    background-color: cornflowerblue;
+    border: 5px solid black;
+}
+
+.wrapper div:nth-child(even){
+    background-color: antiquewhite;
+}

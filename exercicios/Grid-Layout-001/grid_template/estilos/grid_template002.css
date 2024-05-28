@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) minmax(200px, 10%); /* vai repetir esse valor 3 vezes, ou seja, vai criar 3 colunas com 200px cada. pode-se colocar varios repeats num mesmo layout.(valor unico tambem caso se queira criar uma só coluna). */
+
+    /*minmax(200px, 40%) Tamanho mínimo de 200px e maximo de 40% (grid responsivo).*/
+
+    /*1fr - Ocupa uma fração da tela, se todos forem de valores iguais, ambos terão ocuparão o mesmo espaço na tela. */
+    grid-auto-rows: 200px;
+    grid-gap: 25px;
+}
+
+.wrapper div{
+    background-color: lightcoral;
+    border: 5px solid black;
+}
+
+.wrapper div:nth-child(even){
+    background-color: lightblue;
+}
