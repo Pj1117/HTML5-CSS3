@@ -9,8 +9,10 @@
 
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(2, 100px); /*auto-fill - vai preencher a tela com colunas  de acordo com um tamanho um especificado ex:repeat(auto-fill, 100px); irá preencher com colunas com LARGURA de 100px cada, e caso aumente o tamanho da viewport, mais e mais colunas aparecem. */
+
+    /* auto-fit ele vai respeitando o grid-template-area, colocar 100px para cada uma da definiçoes ex: se retirarmos uma coluna das 5 que existiam do grid-template-reas,o auto-fit vai ajustar para 4 colunas com as medidas especificadas antes. caso se colocarsse 2 colubas no grid-template-columns e 5 colunas no grid-template-areas, 2 delas estaria normais, e as 'vazadas' nao cumpririam as 'regras' da 2 primeiras, isso não ocorrem no auto-fit.*/
+    grid-auto-rows: 200px; 
     grid-gap: 0.5rem;
     padding: 20px;
 

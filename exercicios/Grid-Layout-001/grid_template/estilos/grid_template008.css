@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: [side-start] 1fr [content-start] repeat(4, 1fr) [side-end] ;
+    /*A primeira linha está com o nome de header e a ultima com o nome de footer, porem pode ser clocado qualquer nome.*/
+
+    /*grid-template-columns: [side-start] repeat(5, 150px) [side-end] 1fr
+    Se colocarmos para um elemento ir de side-start ate side-end, neste exemplo, ele ira de 1 a 6, que diferente de colocar nomes onde esses ocupam o espaço todo, side-start e side-end respeitar o numero de colunas criadas., onde o 1fr cria uma coluna extra que não é ocupada pelo side. */
+
+    /* Usando o content-start, é possivel manipular em qual linha o elemento vai começar a se posicionar ex:
+    grid-template-columns: [header] 1fr [content-start] repeat(4, 1fr) [footer]; o grid content começou depois da primeira  coluna, mas nçao é preciso especificar um fim para o content*/
+    grid-template-rows: [side-top]200px [content-top]200px[content-bottom] 200px[side-bottom];
+    grid-gap: 15px;
+}
+
+header, footer{
+    grid-column: side;
+}
+
+main{
+    grid-column: content-start;
+}
+
+aside{
+    grid-column: side-start / content-start;
+    grid-row: content-top / content-bottom;
+}
+
+.wrapper *{
+    background-color: mediumslateblue;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.wrapper *:nth-child(even){
+    background-color: mediumorchid;
+   
+}
